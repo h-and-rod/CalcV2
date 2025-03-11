@@ -3,14 +3,20 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculatorComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
