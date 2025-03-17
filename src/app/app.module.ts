@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormComponent } from './form/form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

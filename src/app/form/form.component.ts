@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+    num1:number = 0;
+    num2:number = 0;
+    sum:number = 0;
 
+    onClickSumButton(){
+      this.sum = this.num1 + this.num2;
+    }
 }
